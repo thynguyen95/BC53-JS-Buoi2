@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <p id="test" style="color: blue">Bạn ăn cơm chưa?</p>
+    <div>
+      <input type="text" id="name" value="Alex" />
+    </div>
+
+    <div class="box">
+      <p id="question">Bạn học bài chưa?</p>
+      <p id="answer" class="d-none"></p>
+    </div>
+
+    <div class="container">
+      <button onclick="batDen()">Bật đèn</button>
+      <img src="./images/pic_bulboff.gif" alt="" id="den" />
+      <button onclick="tatDen()">Tắt đèn</button>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="">Tài khoản</label>
+          <input
+            type="text"
+            name=""
+            id="taiKhoan"
+            class="form-control"
+            placeholder=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Mật khẩu</label>
+          <input
+            type="text"
+            name=""
+            id="matKhau"
+            class="form-control"
+            placeholder=""
+          />
+        </div>
+        <button id="login">Đăng nhập</button>
+
+        <div id="result"></div>
+      </div>
+
+      <br /><br /><br />
+      <div class="number">123</div>
+
+      <form action="">
+        <input type="text" />
+        <button type="submit" onclick="disable(event)">click me</button>
+      </form>
+
+      <a href="/" onclick="disable(event)">abc</a>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="container">
+      <h2>Bài tập tính tiền tip</h2>
+      <div class="form-group">
+        <label for="">Tổng tiền Thanh toán</label>
+        <input
+          type="text"
+          name="money"
+          id="money"
+          class="form-control"
+          placeholder="nhập tổng số tiền"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Bạn muốn tip bao nhiêu?</label>
+        <select class="form-control" name="percent" id="percent">
+          <option value="0">Hãy chọn phần trăm.</option>
+          <option value="0.3">30% - Tuyệt</option>
+          <option value="0.2">20% - Tốt</option>
+          <option value="0.15">15% - Tạm ổn</option>
+          <option value="0.1">10% - Tồi</option>
+          <option value="0.05">5% - Thật tệ</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Số người</label>
+        <input
+          type="text"
+          name="person"
+          id="person"
+          class="form-control"
+          placeholder="số người muốn share"
+        />
+      </div>
+
+      <button class="btn btn-danger" onclick="tinhTienTip()">Thanh Toán</button>
+
+      <div id="resultEx"></div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS  -->
+    <script src="./js/index.js"></script>
+    <script src="./js/Ex.js"></script>
+  </body>
+</html>
