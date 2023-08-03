@@ -1,0 +1,15 @@
+1. dom tới html thông qua id, tag name, class name.
+2. in nội dung ra màn hình bằng innerrHTML và innerText. 
+3. thêm thêm 1 cách ép kiểu string về numbern: thêm dấu dấu+ phía trước dòng code dom tới thẻ
+4. chặn sự kiện load form bằng 2 cách:
+  + đổi type="submit" của button thành type="button"
+  + sử dụng hàm preventDefault() của js. 
+5. hàm preventDefault() nó sẽ chặn sự kiện mặc định của thẻ được tác động(a, button submit của form) bằng cách truyền cho nó event ;
+6. 3 cách sử dụng sự kiện click:
+  6.1) gắn onclick cho thẻ html 
+  6.2) gọi sự kiện addEventListener
+  6.3) dom tới thẻ và .onclick = function 
+7. createElement: tạo 1 thẻ html 
+8. appendChild : in thẻ html vào thẻ được chỉ định.
+9. muốn lấy gía trị của thẻ input, select thì sau khi dom tới thẻ phải .value
+10. tất cả giá trị lấy từ input về đều là kiểu string. khi tính toán phải ép kiểu.

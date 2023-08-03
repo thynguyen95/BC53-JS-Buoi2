@@ -62,3 +62,9 @@ function disable(e) {
   e.preventDefault();
   console.log("run submit");
 }
+
+document.getElementById('createEle').onclick = function() {
+  var btn = document.createElement('button');
+  btn.innerHTML = "thẻ này vừa mới được tạo";
+  document.getElementById('resultNewHTML').appendChild(btn);
+}
